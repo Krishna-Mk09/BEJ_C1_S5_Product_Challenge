@@ -20,7 +20,7 @@ public interface ProductService {
 
     List<Product> fetchAllProducts();
 
-    Optional<Product> fetchProductById(int movieId);
+    Optional<Product> fetchProductById(int productId);
 
-    void updateProduct(int mid, Product product);
+    void updateProduct(int productId, Product product);
 }

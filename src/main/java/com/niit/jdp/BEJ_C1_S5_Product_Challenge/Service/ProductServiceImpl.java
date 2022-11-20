@@ -11,12 +11,13 @@ package com.niit.jdp.BEJ_C1_S5_Product_Challenge.Service;
 import com.niit.jdp.BEJ_C1_S5_Product_Challenge.Domain.Product;
 import com.niit.jdp.BEJ_C1_S5_Product_Challenge.Reposiory.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ProductServiceImpl implements ProductService {
-    private final ProductRepository productRepository;
+    private  ProductRepository productRepository;
 
     @Autowired
     public ProductServiceImpl(ProductRepository productRepository) {
